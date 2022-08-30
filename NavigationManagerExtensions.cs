@@ -1,10 +1,8 @@
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.WebUtilities;
-using System.Net.Http;
-using System.Net.Http.Json;
 
-namespace BlazLink
+namespace RPGameLive_GithubPages
 {
     public static class NavigationManagerExtensions
     {
