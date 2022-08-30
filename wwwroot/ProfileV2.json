@@ -1,0 +1,61 @@
+[
+  {
+    "User": "Flavius",
+    "Name": "Flavius",
+
+    "Links": {
+      "Website": "https://flavcreations.com",
+      "Twitch": "FlavCreations",
+      "Twitter": "FlaviusIRL",
+      "Instagram": "Dunno",
+      "Youtube": "FlavCreations",
+      "Facebook": "Dunno",
+      "Discord": "Flavius#5918",
+      "DiscordServer": "4zBSVqVQqA"
+    },
+
+    "History": {
+      "2008": "",
+      "2010": "",
+      "2012": "",
+      "2018": "",
+      "2019": "",
+      "2020": "",
+      "2021": ""
+    },
+
+    "ShortLinks": 
+    [
+      {
+        "Name": "Main Website",
+        "MainUrl": "https://FlavCreations.com/",
+        "ShortUrl": "mainsite",
+        "ListOnPage": "TRUE"
+      },
+      {
+        "Name": "Twitch",
+        "MainUrl": "https://Twitch.tv/FlavCreations",
+        "ShortUrl": "twitch",
+        "ListOnPage": "TRUE"
+      },
+      {
+        "Name": "Twitter",
+        "MainUrl": "https://Twitter.com/FlavCreations",
+        "ShortUrl": "twitter",
+        "ListOnPage": "TRUE"
+      },
+      {
+        "Name": "OGJunky Twitch",
+        "MainUrl": "https://Twitch.tv/OGJunkyard",
+        "ShortUrl": "ogt",
+        "ListOnPage": "FALSE"
+      },
+      {
+        "Name": "Blazlink Github",
+        "MainUrl": "https://github.com/Flavius-The-Person/Blaz-Link",
+        "ShortUrl": "blgit",
+        "ListOnPage": "TRUE"
+      }
+    ]
+  }
+]
