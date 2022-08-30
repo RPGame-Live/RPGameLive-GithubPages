@@ -1,0 +1,59 @@
+﻿@page "/socials/{shortUrl}"
+@inject HttpClient Http
+@inject NavigationManager NavManager
+
+<p>Link Url: @shortUrl</p>
+@if (sociallinks == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table>
+        <tr>
+            <td>Name &emsp;</td>
+            <td>Main Url &emsp;</td>
+            <td>Short Url &emsp;</td>
+        </tr>
+        @foreach (var sociallink in sociallinks)
+        {
+            <tr>
+                <td>@sociallink.Name &emsp;</td>
+                <td>@sociallink.MainUrl &emsp;</td>
+                <td>@sociallink.ShortUrl</td>
+            </tr>
+        }
+    </table>
+}
+@code
+{
+    private Shortlinks[] sociallinks;
+    [Parameter]
+    public string shortUrl { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            sociallinks = await Http.GetFromJsonAsync<Shortlinks[]>("Social-Links.json");
+            foreach (var sociallink in sociallinks)
+            {
+                if (shortUrl == sociallink.ShortUrl)
+                {
+                    shortUrl = "in list";
+                    NavManager.NavigateTo(sociallink.MainUrl);
+                }
+            }
+        }
+        catch (Exception userNotFound)
+        {
+            shortUrl = shortUrl + " is not in list";
+        }
+    }
+    public class Shortlinks
+    {
+        public string Name { get; set; }
+        public string MainUrl { get; set; }
+        public string ShortUrl { get; set; }
+    }
+}

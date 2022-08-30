@@ -1,0 +1,37 @@
+﻿@page "/socials"
+@inject HttpClient Http
+@inject NavigationManager NavManager
+
+@if (sociallinks == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var sociallink in sociallinks)
+    {
+        <a href="@sociallink.MainUrl" class="btn btn-profile">@sociallink.Name</a>
+    }
+}
+@code
+{
+    private Shortlinks[] sociallinks;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            sociallinks = await Http.GetFromJsonAsync<Shortlinks[]>("Social-Links.json");
+        }
+        catch (Exception userNotFound)
+        {
+
+        }
+    }
+    public class Shortlinks
+    {
+        public string Name { get; set; }
+        public string MainUrl { get; set; }
+        public string ShortUrl { get; set; }
+    }
+}
