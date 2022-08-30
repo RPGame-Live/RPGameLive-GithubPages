@@ -20,13 +20,13 @@ jobs:
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
         html_path: ${{ env.PUBLISH_DIR }}/index.html
-        base_href: /
+        base_href: /RPGameLive-GithubPages
     
     - name: Rewrite base href
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
         html_path: ${{ env.PUBLISH_DIR }}/404.html
-        base_href: /
+        base_href: /RPGameLive-GithubPages
 
     - name: GitHub Pages
       if: success()
