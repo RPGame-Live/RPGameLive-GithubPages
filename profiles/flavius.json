@@ -1,0 +1,75 @@
+﻿[
+  {
+    "UserName": "Flavius",
+    "DisplayName": "Flavius",
+    "Links": [
+      {
+        "Name": "Website",
+        "ButtonText": "Main Website",
+        "LinksTo": "https://flavcreations.com"
+      },
+      {
+        "Name": "Twitch",
+        "ButtonText": "Twitch: Flav Creations",
+        "LinksTo": "https://twitch.tv/FlavCreations"
+      },
+      {
+        "Name": "Twitter",
+        "ButtonText": "Flav Creations Twitter",
+        "LinksTo": "https://twitter.com/FlavCreations"
+      },
+      {
+        "Name": "Instagram",
+        "ButtonText": "",
+        "LinksTo": ""
+      },
+      {
+        "Name": "Youtube",
+        "ButtonText": "",
+        "LinksTo": ""
+      },
+      {
+        "Name": "DiscordServer",
+        "ButtonText": "",
+        "LinksTo": "https://discord.gg/4zBSVqVQqA"
+      }
+    ],
+    "ShortLinks": [
+      {
+        "Name": "Main Website",
+        "MainUrl": "https://FlavCreations.com/",
+        "ShortUrl": "mainsite",
+        "ListOnPage": "TRUE"
+      },
+      {
+        "Name": "Twitch",
+        "MainUrl": "https://Twitch.tv/FlavCreations",
+        "ShortUrl": "twitch",
+        "ListOnPage": "TRUE"
+      },
+      {
+        "Name": "Twitter",
+        "MainUrl": "https://Twitter.com/FlavCreations",
+        "ShortUrl": "twitter",
+        "ListOnPage": "TRUE"
+      },
+      {
+        "Name": "OGJunky Twitch",
+        "MainUrl": "https://Twitch.tv/OGJunkyard",
+        "ShortUrl": "ogt",
+        "ListOnPage": "FALSE"
+      },
+      {
+        "Name": "Blazlink Github",
+        "MainUrl": "https://github.com/Flavius-The-Person/Blaz-Link",
+        "ShortUrl": "blgit",
+        "ListOnPage": "TRUE"
+      }
+
+    ]
+
+  }
+]
+
+
+
