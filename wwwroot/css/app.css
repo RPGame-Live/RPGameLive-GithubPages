@@ -6,6 +6,10 @@ html, body {
 }
 
 a, .btn-link {
+    color: darkorange;
+    
+}
+a:hover, .btn-link{
     color: orange;
 }
 
