@@ -47,7 +47,8 @@ else
         }
         catch (Exception userNotFound)
         {
-            shortUrl = shortUrl + " is not in list";
+            if(userNotFound != null)
+                shortUrl = shortUrl + " is not in list";
         }
     }
     public class Shortlinks
