@@ -25,6 +25,11 @@ else
         }
         catch (Exception userNotFound)
         {
+            if(userNotFound != null)
+            {
+                return;
+                //NavManager.NavigateTo("/");
+            }
 
         }
     }
