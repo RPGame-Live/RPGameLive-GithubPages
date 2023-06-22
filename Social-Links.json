@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Discord",
+    "MainUrl": "https://discord.gg/eqBMzVvpEE",
+    "ShortUrl": "discord",
+    "ListOnPage": "TRUE"
+  },
+  {
+    "Name": "Twitch",
+    "MainUrl": "https://Twitch.tv/FlavCreations",
+    "ShortUrl": "twitch",
+    "ListOnPage": "TRUE"
+  },
+  {
+    "Name": "Twitter",
+    "MainUrl": "https://Twitter.com/FlavCreations",
+    "ShortUrl": "twitter",
+    "ListOnPage": "TRUE"
+  }
+]
