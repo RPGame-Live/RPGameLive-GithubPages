@@ -16,6 +16,9 @@ jobs:
     - name: Publish app
       run: dotnet publish -c Release
 
+    - name: Copy index.html to 404.html
+      run: cp ${{ env.PUBLISH_DIR }}/index.html ${{ env.PUBLISH_DIR }}/404.html
+
     - name: Rewrite base href
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
