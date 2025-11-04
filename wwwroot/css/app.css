@@ -65,11 +65,17 @@ app {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    /* Darker Orange -> Yellow theme */
+    /* darker orange and more muted yellow for better contrast */
+    /* even darker orange -> yellow for stronger, more muted theme */
+    background-image: linear-gradient(180deg, #993300 0%, #8b6100 70%);
 }
 
     .sidebar .top-row {
-        background-color: rgba(0,0,0,0.4);
+        /* make the logo/top-row background fully black as requested */
+        background-color: #000000;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .sidebar .navbar-brand {
@@ -78,9 +84,12 @@ app {
 
     .sidebar .oi {
         width: 2rem;
+        min-width: 2rem;
         font-size: 1.1rem;
-        vertical-align: text-top;
-        top: -2px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 0.5rem;
+        top: 0;
     }
 
     .sidebar .nav-item {
@@ -102,16 +111,26 @@ app {
             height: 3rem;
             display: flex;
             align-items: center;
-            line-height: 3rem;
+            line-height: 1.2;
+            gap: 0.5rem;
+            padding: 0.5rem 0.75rem;
+            white-space: normal; /* allow wrapping but keep layout stable */
         }
 
             .sidebar .nav-item a.active {
-                background-color: rgba(255,255,255,0.25);
+                /* slightly stronger darker overlay for active item */
+                background-color: rgba(0,0,0,0.28);
                 color: white;
             }
 
             .sidebar .nav-item a:hover {
-                background-color: rgba(255,255,255,0.1);
+                /* stronger hover darkening */
+                background-color: rgba(0,0,0,0.18);
+                color: white;
+            }
+
+            /* Ensure nav text and icons use white for better contrast on bright background */
+            .sidebar .nav-item a, .sidebar .nav-item a .oi {
                 color: white;
             }
 
