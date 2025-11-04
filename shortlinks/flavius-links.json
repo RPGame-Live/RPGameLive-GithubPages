@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Main Website",
+    "MainUrl": "https://FlavCreations.com/",
+    "ShortUrl": "mainsite",
+    "ListOnPage": "TRUE"
+  },
+  {
+    "Name": "Twitch",
+    "MainUrl": "https://Twitch.tv/FlavCreations",
+    "ShortUrl": "twitch",
+    "ListOnPage": "TRUE"
+  },
+  {
+    "Name": "Twitter",
+    "MainUrl": "https://Twitter.com/FlavCreations",
+    "ShortUrl": "twitter",
+    "ListOnPage": "TRUE"
+  },
+  {
+    "Name": "OGJunky Twitch",
+    "MainUrl": "https://Twitch.tv/OGJunkyard",
+    "ShortUrl": "ogt",
+    "ListOnPage": "FALSE"
+  },
+  {
+    "Name": "Blazlink Github",
+    "MainUrl": "https://github.com/Flavius-The-Person/Blaz-Link",
+    "ShortUrl": "blgit",
+    "ListOnPage": "TRUE"
+  }
+]
